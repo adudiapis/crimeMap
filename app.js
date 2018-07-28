@@ -9,10 +9,7 @@ const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
 
 // Source data CSV
 const DATA_URL =
-  // 'https://data.cityofnewyork.us/resource/57mv-nv28.csv?$select=longitude,latitude&$limit=50000';
-  // 'https://data.cityofnewyork.us/resource/57mv-nv28.csv?$select=longitude,latitude&$limit=50000&$where=cmplnt_fr_dt%3E%272017-01-01%27';
   'https://data.cityofnewyork.us/resource/57mv-nv28.csv?$select=longitude,latitude&$where=ofns_desc=%27GRAND%20LARCENY%27%20AND%20cmplnt_fr_dt%3E%272017-01-01%27&$limit=50000';
-// 'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/3d-heatmap/heatmap-data.csv'; // eslint-disable-line
 
 export const INITIAL_VIEW_STATE = {
   longitude: -73.958917,
