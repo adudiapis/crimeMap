@@ -1,36 +1,18 @@
-This is a minimal standalone version of the 3DHeatmap example
-on [deck.gl](http://deck.gl) website.
+# NYC Crime Map Visualization
 
-### Usage
-- Copy the content of this folder to your project.
+You can view this visualization here: https://crime-map-nyc.herokuapp.com/
 
-- Install Package
-```
-npm install
-```
+## Screenshots
+![screenshot1](./images/screenshot1.png)
+![screenshot2](./images/screenshot1.png)
 
-- Delete last line in `webpack.config.js`
-```
-module.exports = require('../webpack.config.local')(module.exports);
-```
+## Description
+This project uses Uber's Deck.gl library to visualize NYC Grand Larceny data from 2017.
+This is based on Uber's hexagon layer example: https://github.com/uber-common/deck.gl-data/tree/master/examples/3d-heatmap
+The data comes from the NYC Open Data Website: https://data.cityofnewyork.us/Public-Safety/NYC-crime/qb7u-rbmr/data
 
-- Add [Mapbox access token](https://www.mapbox.com/help/define-access-token/)
-by run this command in your terminal.
-
-```
-export MapboxAccessToken=<Your_Token>
-```
-
-or you can directly add it to `app.js`
-```
-// Set your mapbox token here
-const MAPBOX_TOKEN = <Your_Token>>;
-```
-- Start the app.
-```
-npm start
-```
-
-### Data format
-Sample data is stored in [deck.gl Example Data](https://github.com/uber-common/deck.gl-data/tree/master/examples/3d-heatmap). To use your own data, checkout
-the [documentation of HexagonLayer](../../docs/layers/hexagon-layer.md)
+## Running Locally
+1. clone the project
+2. npm install
+3. npm run start-local
+   
