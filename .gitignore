@@ -1,4 +1,3 @@
 node_modules
 .vscode
-dist
 mapbox-token.json

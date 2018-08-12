@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start-local": "webpack-dev-server --env.local --progress --hot --open",
-    "start": "webpack -p --config ./webpack.config.js --progress && node index.js"
+    "build": "webpack -p --config ./webpack.config.js --progress",
+    "start": "node index.js"
   },
   "dependencies": {
     "d3-request": "^1.0.5",
