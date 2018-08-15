@@ -17,4 +17,5 @@ The data comes from the NYC Open Data Website: https://data.cityofnewyork.us/Pub
 1. clone the project
 2. npm install
 3. npm run start-local
+4. open application in browser with localhost:3000
    
